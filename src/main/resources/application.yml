@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    properties:
+      hibernate:
+        default_schema: example
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    username: postgres
+    password: ${SPRING_DATABASE_PASSWORD}
